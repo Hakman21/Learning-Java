@@ -52,6 +52,7 @@ public class Strings {
         */
 
         System.out.println(text1 + "\n" + text2);
+        System.out.println("Hello  \bWorld");
 
     }
 }
