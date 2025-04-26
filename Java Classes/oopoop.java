@@ -11,5 +11,6 @@ public class oopoop {
         System.out.println("I am procrastinating");
         System.out.println("I will get an early night tonight");
         System.out.println("Then I will study hard tomorrow.");
+        System.out.println("And then I will do very well in my exams");
     }
 }
