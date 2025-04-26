@@ -10,5 +10,6 @@ public class oopoop {
         System.out.println("I am not excited for ts exam");
         System.out.println("I am procrastinating");
         System.out.println("I will get an early night tonight");
+        System.out.println("Then I will study hard tomorrow.");
     }
 }
