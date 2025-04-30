@@ -10,7 +10,7 @@ class SwitchTester {
         //System.out.println(((Object)b).getClass().getName());
     }
 
-    public static void switchExperiment(int a, int b) {
+/*     public static void switchExperiment(int a, int b) {
         switch (a) {
             case 1:
                 b -= 4;
@@ -27,6 +27,17 @@ class SwitchTester {
             default:
                 b = 0;
                 break;
+        }
+        System.out.println("b is " + b);
+    } */
+
+    public static void switchExperiment(int a, int b) {
+        switch (a) {
+            case 1 -> b -= 4;
+            case 2 -> b += 4;
+            case 3 -> b /= 4;
+            case 4 -> b *= 4;
+            default -> b = 0;
         }
         System.out.println("b is " + b);
     }
