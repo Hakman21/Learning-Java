@@ -133,3 +133,7 @@ System.out.println(myChar.charValue());
 Integer my_number = 100;
 String my_string = my_number.toString();
 System.out.println(my_string.length());
+
+try
+catch
+finally
