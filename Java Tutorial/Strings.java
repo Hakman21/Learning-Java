@@ -15,7 +15,7 @@ public class Strings {
 
 
 
-        String first_name = "Hak";
+        String first_name = "Ha";
         String last_name = "Man";
         System.out.println("Concatenation: " + first_name + " " + last_name);
         System.out.println(first_name.concat(last_name));

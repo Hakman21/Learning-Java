@@ -1,7 +1,7 @@
 public class Variables {
     public static void main(String[] args) {
         // HOW TO DECLARE VARIABLE type variableName = value;
-        String name = "Hak";
+        String name = "Ha";
         int age = 19;
 
         int my_num;

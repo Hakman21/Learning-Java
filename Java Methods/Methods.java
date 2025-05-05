@@ -9,6 +9,6 @@ public class Methods {
     }
 
     public static void main(String[] args) {
-        my_method("Hakim", 19);
+        my_method("H", 19);
     }
 }
