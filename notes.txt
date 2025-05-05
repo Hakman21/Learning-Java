@@ -42,9 +42,16 @@ import package.name.*;   // Import the whole package
 import java.util.Scanner
 
 Scanner input = new Scanner(System.in);
-System.out.println("Enter username: ");
+System.out.print("Enter username: ");
 String username = input.nextLine();
 System.out.println(username);
+input.close();
+
+import java.io.Console;
+…
+Console console = System.console();
+String in;
+in = console.readLine("Input: ");
 
 INHERITANCE
 class Vehicle {
@@ -60,13 +67,22 @@ class Car extends Vehicle {
       System.out.println(myCar.brand + " " + myCar.modelName);
 ...
 
-POLYMORPHISM
+POLYMORPHISM - define multiple methods with the same name but different signature
+To override a method, the method must be defined in the subclass using the same signature as in its superclass. Use the @Override annotation
 class Animal {
-... 
+public void animalSound() {
+        System.out.println("The animal makes a sound");
+
 class Pig extends Animal {
-...
+    @override
+    public void animalSound() {
+        System.out.println("The pig says: wee wee");
+
 class Dog extends Animal {
-...
+    @override
+    public void animalSound() {
+        System.out.println("The dog says: bow wow");
+
 class polymorphism { //MAIN CLASS
     public static void main(String[] args) {
         Animal myAnimal = new Animal();  // Create a Animal object
@@ -75,12 +91,14 @@ class polymorphism { //MAIN CLASS
 
 enum constants are public, static and final
 
+
+
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Collections;
-
 
 ArrayList<String> cars = new ArrayList<String>();
 cars.add(index, "item");
