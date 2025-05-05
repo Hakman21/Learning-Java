@@ -1,0 +1,117 @@
+byte, short, int, long
+float, double
+boolean
+char, String
+
+String greeting = "Hello World!";
+String alphabet = "abcdefghijklmnopqrstuvwxyz";
+System.out.println("The length of the alphabet is: " + alphabet.length());
+System.out.println("Upper Case: " + greeting.toUpperCase());
+System.out.println("Lower Case: " + greeting.toLowerCase());
+
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate"));
+
+\'	'	Single quote
+\"	"	Double quote
+\\	\	Backslash
+
+int random_num = (int)(Math.random() * 101); // Random Number between 0 and 100
+
+&& 	Logical and	x < 5 &&  x < 10	
+|| 	Logical or	x < 5 || x < 4	
+!	Logical not	!(x < 5 && x < 10)
+
+for (int a = 0; a <= 10; a += 2) {
+    System.out.println(a);
+}
+
+class_name myObj = new class_name(parameters);
+System.out.println(myObj.(variable or method name);
+MUST CREATE AN OBJECT OF THE CLASS TO CALL A PUBLIC - static can be accessed whenever
+
+PUBLIC - ACCESSIBLE BY ANY OTHER CLASS
+PRIVATE - ONLY ACCESSIBLE IN THE DECLARED CLASS
+PROTECTED - ACCESSIBLE IN THE SAME PACKAHE AND SUBCLASSES
+
+void - doesn't return a value
+
+import package.name.Class;   // Import a single class
+import package.name.*;   // Import the whole package
+
+import java.util.Scanner
+
+Scanner input = new Scanner(System.in);
+System.out.println("Enter username: ");
+String username = input.nextLine();
+System.out.println(username);
+
+INHERITANCE
+class Vehicle {
+    protected String brand = "Ford";        // Vehicle attribute
+    public void honk() {                    // Vehicle method
+...
+  
+class Car extends Vehicle {
+    private String modelName = "Mustang";    // Car attribute
+...
+      Car myCar = new Car();
+      myCar.honk();
+      System.out.println(myCar.brand + " " + myCar.modelName);
+...
+
+POLYMORPHISM
+class Animal {
+... 
+class Pig extends Animal {
+...
+class Dog extends Animal {
+...
+class polymorphism { //MAIN CLASS
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();  // Create a Animal object
+        Animal myPig = new Pig();  // Create a Pig object
+        Animal myDog = new Dog();  // Create a Dog object
+
+enum constants are public, static and final
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Collections;
+
+
+ArrayList<String> cars = new ArrayList<String>();
+cars.add(index, "item");
+Collections.sort(cars);
+cars.get(index);
+cars.set(index, "item");
+cars.remove("item" OR index)
+cars.clear()
+
+LinkedList<String> cars = new LinkedList<String>();
+All same methods
+Use an ArrayList for storing and accessing data, and LinkedList to manipulate data.
+
+HashMap<String, String> CapitalCities = new HashMap<String, String>();
+CapitalCities.put("England", "London");
+System.out.println(CapitalCities.size());
+CapitalCities.keySet()
+CapitalCities.values()
+
+HashSet<String> cars = new HashSet<String>(); // A HashSet is a collection of items where every item is unique
+System.out.println(cars.contains("item"));
+
+
+Integer myInt = 5;
+Double myDouble = 5.99;
+Character myChar = 'A';
+
+System.out.println(myInt.intValue());
+System.out.println(myDouble.doubleValue());
+System.out.println(myChar.charValue());
+
+Integer my_number = 100;
+String my_string = my_number.toString();
+System.out.println(my_string.length());
