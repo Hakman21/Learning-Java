@@ -137,3 +137,72 @@ System.out.println(my_string.length());
 try
 catch
 finally
+
+Important classes for text file output:
+- java.io.FileWriter
+- java.io.PrintWriter
+try (PrintWriter writer = new PrintWriter(new FileWriter("file.txt"))) {
+    writer.println("Hello World");
+}
+Important classes for text file input:
+- java.io.FileReader
+- java.io.BufferedReader
+try (BufferedReader reader = new BufferedReader(new FileReader("file.txt"))) {
+    String line = reader.readLine();
+}
+
+Important classes for binary file output:
+- java.io.FileOutputStream
+- java.io.DataOutputStream
+try (DataOutputStream out = new DataOutputStream(new FileOutputStream("file.bin"))) {
+    out.writeInt(42);
+}
+Important classes for binary file input:
+- java.io.FileInputStream
+- java.io.DataInputStream
+try (DataInputStream in = new DataInputStream(new FileInputStream("file.bin"))) {
+    int value = in.readInt();
+}
+
+Important classes for object file output:
+- java.io.FileOutputStream
+- java.io.ObjectOutputStream
+try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("object.dat"))) {
+    out.writeObject(myObject);
+}
+Important classes for object file input:
+- java.io.FileInputStream
+- java.io.ObjectInputStream
+try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("object.dat"))) {
+    MyClass obj = (MyClass) in.readObject();
+}
+
+Plus, the java.io.Serializable interface
+RandomAccessFile file = new RandomAccessFile("file.txt", "rw");
+file.seek(100); // Move to position 100
+file.writeBytes("New data");
+
+import java.util.Stack;
+
+Stack<String> readingPile = new Stack<String>();
+readingPile.push("Java In Two Semesters");
+readingPile.push("The Code Book");
+readingPile.push("War and Peace");
+readingPile.pop(); // War and Peace
+readingPile.size(); // 2
+readingPile.peek();
+
+
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+Queue<String> trafficJam = new PriorityQueue<String>();
+trafficJam.add("PJ59 BMW");
+trafficJam.add("LA51 ABC");
+trafficJam.add("PB69 FRD");
+trafficJam.remove(); // PJ59 BMW
+trafficJam.peek();
+
+
+
+create .java file for each
