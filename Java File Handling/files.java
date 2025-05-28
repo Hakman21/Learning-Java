@@ -14,6 +14,6 @@ public class files {
         // length() 	Long 	Returns the size of the file in bytes
         // list() 	String[] 	Returns an array of the files in the directory
         // mkdir() 	Boolean 	Creates a directory
-
+        System.out.println(file);
     }
 }

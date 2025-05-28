@@ -8,5 +8,6 @@ public class packages {
         System.out.println("Enter username: ");
         String username = input.nextLine();
         System.out.println(username);
+        input.close();
     }
 }
